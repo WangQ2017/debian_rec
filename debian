@@ -1,0 +1,25 @@
+查看系统版本
+hitcnc@debian:~$ lsb_release -a
+No LSB modules are available.
+Distributor ID:	Debian
+Description:	Debian GNU/Linux 9.3 (stretch)
+Release:	9.3
+Codename:	stretch
+
+MAKEFILE command:
+gcc -I    -L    -lm(math.h)  -lpthread(libpthread)
+all:
+make -C /usr/src/linux-source-2.6.15  M=$(PWD) nodules //read makefile in kernel src ,then return pwd
+
+environment variable:
+system:/etc/profile
+user:username/home/.profile
+
+linux command:
+dd
+du
+grep
+cat
+pkg-config --list-all | grep gtk
+find -name "powerlink.c"
+echo $PATH
