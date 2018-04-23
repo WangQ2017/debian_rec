@@ -1,4 +1,4 @@
-查看系统版本
+﻿查看系统版本
 hitcnc@debian:~$ lsb_release -a
 No LSB modules are available.
 Distributor ID:	Debian
@@ -6,20 +6,26 @@ Description:	Debian GNU/Linux 9.3 (stretch)
 Release:	9.3
 Codename:	stretch
 
-MAKEFILE command:
+MAKEFILE命令:
 gcc -I    -L    -lm(math.h)  -lpthread(libpthread)
 all:
 make -C /usr/src/linux-source-2.6.15  M=$(PWD) nodules //read makefile in kernel src ,then return pwd
 
-environment variable:
+环境变量设置:
 system:/etc/profile
 user:username/home/.profile
 
-linux command:
+linux（debian）命令:
 dd
 du
 grep
-cat
-pkg-config --list-all | grep gtk
-find -name "powerlink.c"
-echo $PATH
+cat //查看文本
+pkg-config --list-all | grep gtk //依赖检查
+find -name "powerlink.c"//文件查找
+echo $PATH //显示字符串（环境变量）
+
+报错：
+1.make -C /lib/modules/3.2.0-4-amd64/build M=/media/3/download/acpi_call-master modules
+make: *** /lib/modules/3.2.0-4-amd64/build: 没有那个文件或目录。 停止。
+make: *** [default] 错误 2
+解决：sudo apt-get install linux-headers-$(uname -r) 
