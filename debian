@@ -48,3 +48,5 @@ deb-src http://mirrors.ustc.edu.cn/debian/ stretch-updates main non-free contrib
 deb-src http://mirrors.ustc.edu.cn/debian/ stretch-backports main non-free contrib
 deb http://mirrors.ustc.edu.cn/debian-security/ stretch/updates main non-free contrib
 deb-src http://mirrors.ustc.edu.cn/debian-security/ stretch/updates main non-free contrib
+
+https://blog.csdn.net/sunny2038/article/details/7082164
