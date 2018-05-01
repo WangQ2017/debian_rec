@@ -29,3 +29,13 @@ echo $PATH //显示字符串（环境变量）
 make: *** /lib/modules/3.2.0-4-amd64/build: 没有那个文件或目录。 停止。
 make: *** [default] 错误 2
 解决：sudo apt-get install linux-headers-$(uname -r) 
+
+
+deb https://mirrors.tuna.tsinghua.edu.cn/debian/ stretch main non-free contrib
+deb https://mirrors.tuna.tsinghua.edu.cn/debian/ stretch-updates main non-free contrib
+deb https://mirrors.tuna.tsinghua.edu.cn/debian/ stretch-backports main non-free contrib
+deb-src https://mirrors.tuna.tsinghua.edu.cn/debian/ stretch main non-free contrib
+deb-src https://mirrors.tuna.tsinghua.edu.cn/debian/ stretch-updates main non-free contrib
+deb-src https://mirrors.tuna.tsinghua.edu.cn/debian/ stretch-backports main non-free contrib
+deb https://mirrors.tuna.tsinghua.edu.cn/debian-security/ stretch/updates main non-free contrib
+deb-src https://mirrors.tuna.tsinghua.edu.cn/debian-security/ stretch/updates main non-free contrib
